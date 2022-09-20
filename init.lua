@@ -1,1 +1,12 @@
-
+require("settings")
+require("packer-config")
+require("mappings")
+require("colorschemes-config.onedark-config")
+require("nvim-tree-config")
+require("toggleterm-config")
+require("lsp-config.language-servers")
+require("lsp-config.nvim-cmp")
+require("lualine-config")
+require("barbar-config")
+require("telescope-config")
+require("autopairs-config")
