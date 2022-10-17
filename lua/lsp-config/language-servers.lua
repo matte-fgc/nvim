@@ -37,16 +37,7 @@ capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 
 local lsp_flags = {debounce_text_changes = 150}
 
-local servers = { "pyright" }
-for _, lsp in ipairs(servers) do
-    nvim_lsp[lsp].setup {
-        on_attach = on_attach,
-        flags = lsp_flags,
-        capabilities = capabilities,
-    }
-end
-
-local servers = { "denols" }
+local servers = { "pyright", "rust_analyzer" }
 for _, lsp in ipairs(servers) do
     nvim_lsp[lsp].setup {
         on_attach = on_attach,
