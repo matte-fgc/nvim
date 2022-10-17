@@ -1,7 +1,7 @@
 require("settings")
 require("packer-config")
 require("mappings")
-require("colorschemes-config.onedark-config")
+require("colorschemes-config.gruvbox-config")
 require("nvim-tree-config")
 require("toggleterm-config")
 require("lsp-config.language-servers")
